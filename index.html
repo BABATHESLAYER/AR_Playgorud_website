@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AR Playground</h1>
+        <p>Department of Computer Science & Engineering, MITSoC, Loni Kalbhor</p>
+        <a href="https://drive.google.com/drive/folders/1PBrb9qVHyPZ4SJrlx-NRJOsbqlf_V7UH" class="download-btn" target="_blank">Download APK</a>
+    </header>
+
+    <main>
+        <section id="solution">
+            <h2>Proposed Solution</h2>
+            <p>A mobile application built with Flutter that uses Augmented Reality (AR) to let users explore and interact with real-world objects and places. We will use open source photogrammetry software like Meshroom and Blender to create and optimize 3D models for the app, which will be hosted on Google Cloud Platform (GCP).</p>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/iUyiqFsknHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MqTnhFCBexc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <ul>
+                <li><strong>Digital Preservation:</strong> It creates a permanent digital copy of sites, protecting them from physical decay or destruction.</li>
+                <li><strong>Global Access:</strong> It allows anyone with a smartphone to virtually visit and learn about world sites, removing barriers of cost and travel.</li>
+            </ul>
+        </section>
+
+        <section id="problem">
+            <h2>Problem Statement</h2>
+            <p>The project addresses the need for a more engaging and interactive way to explore the world beyond static information. It aims to bridge the gap between the virtual and physical, promoting imaginative and active exploration for various purposes, such as education, tourism, or entertainment.</p>
+        </section>
+
+        <section id="objectives">
+            <h2>Objectives</h2>
+            <ul>
+                <li>To seamlessly overlay digital content onto the real world using a smartphone camera.</li>
+                <li>To provide an immersive experience that enriches real-world exploration.</li>
+                <li>To transform a user's surroundings into a dynamic space for discovery and interaction.</li>
+                <li>To ensure the app is accessible to a wide range of devices and network conditions.</li>
+            </ul>
+        </section>
+
+        <section id="methods">
+            <h2>Concepts and Methods</h2>
+            <dl>
+                <dt>Photogrammetry</dt>
+                <dd>The core method for creating 3D models from a series of photos.</dd>
+                <dt>Software Used</dt>
+                <dd>
+                    <ul>
+                        <li><strong>Meshroom:</strong> For processing photos and generating initial 3D models.</li>
+                        <li><strong>Blender:</strong> For cleaning, optimizing, and compressing the models into a mobile friendly .glb format.</li>
+                    </ul>
+                </dd>
+                <dt>AR Technology</dt>
+                <dd>The application will use markerless AR to place virtual objects in the real world.</dd>
+                <dt>Open-Source Software</dt>
+                <dd>Meshroom</dd>
+            </dl>
+        </section>
+
+        <section id="implementation">
+            <h2>Implementation</h2>
+            <dl>
+                <dt>Application Framework</dt>
+                <dd>Flutter, for a unified codebase on Android and iOS.</dd>
+                <dt>AR Integration</dt>
+                <dd>Using Flutter AR plugins to access native AR frameworks like model_viewer_plus</dd>
+                <dt>Cloud Platform</dt>
+                <dd>Google Cloud Platform (GCP) for hosting the .glb models.</dd>
+                <dt>Authentication</dt>
+                <dd>OAuth 2.0 for secure user sign-in, implemented with the google_sign_in Flutter package.</dd>
+            </dl>
+        </section>
+
+        <section id="results">
+            <h2>Results</h2>
+            <dl>
+                <dt>Technical</dt>
+                <dd>The app is designed for smooth performance, ensuring a seamless user experience. It will have accurate AR tracking and be optimized for mobile devices to minimize battery drain.</dd>
+                <dt>User Engagement</dt>
+                <dd>The app aims for high user retention and increased engagement through its interactive and immersive AR content.</dd>
+                <dt>Real-World Impact</dt>
+                <dd>
+                    <ul>
+                        <li><strong>Education:</strong> AR improves learning outcomes and knowledge retention by allowing users to interact with complex concepts in 3D.</li>
+                        <li><strong>Tourism & Culture:</strong> The app can boost visitor engagement in museums and promotes local exploration.</li>
+                        <li><strong>Accessibility & Business:</strong> The low-cost solution makes the technology accessible to various institutions and can create new revenue streams through virtual experiences.</li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion and Future Work</h2>
+            <p>Our AR Playground transforms AR from passive viewing to active, immersive exploration using Meshroom, Blender, Flutter, and GCP for a scalable, secure, and affordable platform. It addresses AR’s current gaps by offering interactive, diverse content across locations.</p>
+            <h3>Future Work</h3>
+            <ul>
+                <li><strong>User-Generated Content (UGC):</strong> Allow users to upload and share 3D models.</li>
+                <li><strong>Interactivity:</strong> Add object manipulation and collaboration.</li>
+                <li><strong>AI:</strong> Personalize AR content via user data.</li>
+                <li><strong>Monetization:</strong> Partner with tourism and education sectors.</li>
+                <li><strong>Devices:</strong> Expand to AR glasses and new hardware.</li>
+                <li><strong>Accessibility:</strong> Improve usability for all users.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://pub.dev/packages/ar_flutter_plugin">Flutter AR Plugin</a></li>
+                <li><a href="https://github.com/alicevision/meshroom">Meshroom (AliceVision)</a></li>
+                <li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/introduction.html">Blender Manual</a></li>
+                <li><a href="https://firebase.google.com/docs/storage">Firebase Cloud Storage (GCP)</a></li>
+                <li><a href="https://developers.google.com/identity/protocols/oauth2">Google OAuth 2.0</a></li>
+                <li><a href="https://pub.dev/packages/google_sign_in">Flutter Google Sign-in</a></li>
+                <li><a href="https://pub.dev/packages/firebase_storage">Flutter Firebase Storage</a></li>
+            </ul>
+        </section>
+        <section id="credits">
+            <h2>Credits</h2>
+            <p>Team BRB & Abhijeet Pawar, Archit Gaware, Payal Borkar, Samruddhi Bhondave</p>
+        </section>
+    </footer>
+</body>
+</html>
